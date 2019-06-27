@@ -1,2 +1,29 @@
 /* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+.topButtons {
+ width: 90px;
+ padding: 10px;
+ cursor: pointer;
+ font-weight: 500;
+ font-size: 90%;
+ background: #0000ff;
+ color: #fff;
+ float: right;                  
+  position: absolute;
+ font-family: Arial, Helvetica, sans-serif;
+ left:200vh;
+}
+.topButtons1 {
+ width: 90px;
+ padding: 10px;
+ cursor: pointer;
+ font-weight: 500;
+ font-size: 90%;
+ background: #0000ff;
+ color: #fff;
+ float: right;                  
+  position: absolute;
+ font-family: Arial, Helvetica, sans-serif;
+ left:218vh;
+}
+
