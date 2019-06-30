@@ -27,3 +27,12 @@
        modal_m.style.display = "none";
        }
         }
+
+
+
+
+function reload(){
+	document.location.reload(true);
+	
+}
+
