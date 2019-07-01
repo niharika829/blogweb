@@ -120,3 +120,36 @@ cursor: pointer;
   color: white;
   
 }
+#head_create{text-align:center;}
+/* Set a style for all buttons */
+#lets_btn {
+  background-color: orange;
+  color: black;
+  padding: 14px 20px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius:20px 40px;
+}
+
+#lets_btn:hover {
+  opacity:1;
+}
+.modal-body-create {padding: 2px 16px;}
+
+.modal-footer-create {
+  padding: 2px 16px;
+  background-color: orange;
+  color: white;
+}
+input[type=text], input[type=password] {
+  width: 95%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+	
