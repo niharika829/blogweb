@@ -105,3 +105,83 @@ body {
     width: 100%;
 
 }
+
+
+#fa1 , #fa2 , #fa3 , #fa4 , #fa5 ,#threedots{position:relative;
+float:right;}
+#myModaltrash {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content-trash {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.closetrash {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closetrash:hover,
+.closetrash:focus {
+  color: red;
+  text-decoration: underline overline dotted red;
+  cursor: pointer;
+}
+  .modal-body-trash {
+	color:black;
+	padding: 12px 16px;}
+	.yesno {
+  background-color: red;
+  color: white;
+  padding: 14px 2px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  width: 35%;
+  opacity: 0.9;
+  position:relative;
+left:6%;
+}
+
+.be_sure{
+	text-align:center;
+}
+	.yesno1 {
+  background-color: green;
+  color: white;
+  padding: 14px 2px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  width: 35%;
+  opacity: 0.9;
+  position:relative;
+left:20%;
+}
+
+.yesno:hover {
+  opacity:1;
+}
