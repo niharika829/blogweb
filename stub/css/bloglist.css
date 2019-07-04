@@ -9,7 +9,38 @@ position: absolute;
   left: 6px;    
 }
 
+#post1{
+ position: relative;
+   float:left;
+	left:5%;
+right:0%;	
+	
+}
+#post2{
+ position: relative;
+   float:right;
+   right:5%;
+  
+}
 
+#post3{
+ position: relative;
+   float:left;
+	left:5%;	
+	
+}
+#post4{
+ position: relative;
+	 float:right;
+	 right:5%;
+	
+}
+
+#post5{
+ position: relative;
+	left:30%;	
+	
+}
 .post {
     position: relative;
     width: 90%;
