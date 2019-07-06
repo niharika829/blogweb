@@ -96,3 +96,19 @@ height:37px;
  font-family: Arial, Helvetica, sans-serif;
  right: 8%;
 }
+#fontt{
+font-weight: 200;
+ font-size: 60%;	
+}
+#likeBlog{
+ width: 90px;
+ text-align:center;
+height:37px;
+ cursor: pointer;
+ background: #f5427e;
+ color: white;                 
+  position: absolute;
+  left:4%;
+ font-family: Arial, Helvetica, sans-serif;
+ 
+}
