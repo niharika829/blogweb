@@ -56,3 +56,30 @@ position: absolute;
  font-family: Arial, Helvetica, sans-serif;
  right: 100px;
 }
+
+
+#edit {
+ width: 90px;
+ text-align:center;
+height:37px;
+ cursor: pointer;
+ background: #f5427e;
+ color: white;
+ float: right;                  
+  position: absolute;
+ font-family: Arial, Helvetica, sans-serif;
+ right: 8%;
+}
+#done {
+	display:none;
+ width: 90px;
+ text-align:center;
+height:37px;
+ cursor: pointer;
+ background: #f5427e;
+ color: white;
+ float: right;                  
+  position: absolute;
+ font-family: Arial, Helvetica, sans-serif;
+ right: 8%;
+}
