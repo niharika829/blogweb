@@ -1,3 +1,8 @@
+#blogTitleNew{
+	text-align:center;
+}
+
+
 .blogTite {
     font-size: 150%;
     font-family: 'Abel', sans-serif;
@@ -11,6 +16,14 @@
     padding: 0px 0px 0px 10px;
     font-family: 'Niconne', cursive;
     font-size: 30px;
+}
+#blogBody{
+	position:relative;
+	left:4%;
+  width: 93%; 
+  height:40%;
+font-size:15px;
+  border: 0px solid blue;
 }
 
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
