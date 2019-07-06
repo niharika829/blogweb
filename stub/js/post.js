@@ -11,3 +11,15 @@ function myFunctionsave() {
  document.getElementById("done").style.display = "none";
  
 }
+var clicks = 0;
+function postLiked(){
+             clicks += 1;
+			 if(clicks === 1){
+        document.getElementById("commentCount").innerHTML = clicks +" person likes this!";
+			 }else{
+				 
+				document.getElementById("commentCount").innerHTML = clicks +" people have liked this!";
+			 }
+ document.getElementById("like").innerHTML=" Liked!";
+           }
+		   
