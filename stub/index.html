@@ -1,8 +1,11 @@
-<!-- adding documentation -->
+<!-- adding documentations -->
 <!DOCTYPE html>
+
 <html>
+
 <head>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	
     <!-- Place all CSS for header in this file -->
     <link href='css\header.css' rel='stylesheet' type='text/css'>
@@ -14,40 +17,50 @@
     <link href='css\font.css' rel='stylesheet' type='text/css'>
 
 </head>
+
 <body>
- <div id="main-container-div">
 
-        <div class="header">
+    <div id="main-container-div">
 
-        	<!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
-		 <input class="topButtons1" type="button" value="Sign In">
-		 <input class="topButtons" type="button" value="Sign Up">
-		<p id="pageTitle" class="logo-title">ScriBBler</p><br /><br />
-                <p class="middleText">Explore. Imagine. Create</p>
+				<div class="header">
 
-        </div>
+								<!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+
+            
+								<input id="myBtnlog" class="topButtons1" type="button" value="Sign In">
+								<input id="myBtn" class="topButtons" type="button" value="Sign Up">
+								<p id="pageTitle" class="logo-title" onClick="reload()">ScriBBler</p><br /><br />
+								<p class="middleText">Explore. Imagine. Create</p>
+			
+
+				</div>
            
-        <div class="postButtons">
+				<div class="postButtons">
 
-        	<!-- Insert code for All Posts & Create Post button here -->
-		 <input class="Buttons1" type="button" onClick="location.href='html/bloglist.html'" value="All Posts">
-		 <input class="Buttons" type="button" value="Create Post">
+								<!-- Insert code for All Posts & Create Post button here -->
+								<input class="Buttons1" type="button" onClick="location.href='html/bloglist.html'"  value="All Posts">
+								<input id="myBtn_create" class="Buttons" type="button" value="Create Post">
 
-        </div>
-  </div>
+				</div>
+    </div>
 
-	
-	
-	
-	
-	
-	
-	
-<div id="myModallog" class="modal">	<!-- The Modal -->
-			<!-- Insert code for Sign In modal here -->
-			<!-- Modal content -->
 
-			<div class="modal-content-log">
+ 
+
+
+
+
+
+
+
+
+ 		
+		<div id="myModallog" class="modal">	<!-- The Modal -->
+						<!-- Insert code for Sign In modal here -->
+						<!-- Modal content -->
+
+						<div class="modal-content-log">
+						
 										<div class="modal-header-log">
 													<span class="closelog">&times;</span>
 													<h2 class="get_start">Welcome Back!</h2>
@@ -62,13 +75,13 @@
 													<form>
 							
 													<label for="name"><b>Username</b></label>
-													<input type="text" placeholder="Enter Username" name="name" required />
+													<input type="text" placeholder="Enter Username" name="name" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="characters followed by an @ sign, followed by more characters, and then a .  followed at least 2 letters from a to z" required />
 			
 													<label for="psw"><b>Password</b></label>
-													<input type="password" placeholder="Enter Password" name="psw" required />
+													<input type="password" placeholder="Enter Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
   
 													<label>
-													<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px" required /> Remember me
+													<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
 													</label>
 		
 													<div class="clearfix">
@@ -79,120 +92,111 @@
 										
 										
 										 <div class="modal-footer">
+										 
 													<h3 id="heading">Not a member?<span class="link" onClick="fun()" >Sign Up</span></h3>
 										</div>
   
-			</div>
- </div>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-	
-	
-	
-	
-	
-	
-  <div id="myModal" class="modal"><!-- The Modal -->
-				<!-- Insert code for Sign Up modal here -->
-			<!-- Modal content -->
-	    		<div class="modal-content">
-					<div class="modal-header">
-								<span class="close">&times;</span>
-								<h2 class="get_start_signup">Get Started</h2>
-								<hr>
-					</div>
-					<div class="modal-body">
-								<form>
-								<label for="email"><b>Full Name</b></label>
-								<input type="text" placeholder="Enter Full Name" name="email" required />
-													
-								<label for="name"><b>Username</b></label>
-								<input type="text" placeholder="Enter Username" name="name" required />
-								
-								<label for="psw"><b>Password</b></label>
-								<input type="password" placeholder="Enter Password" name="psw" required />
-
-								<label for="psw-repeat"><b>Confirm Password</b></label>
-								<input type="password" placeholder="Confirn Password" name="psw-repeat" required />
-      	
-								<!--<label>
-								<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px" required /> Remember me
-								</label>-->
-		
-								<div class="clearfix">
-								<button  type="submit" class="signupbtn">Sign Up</button>
-														
-								</div>
-								</form>
-					</div>
-  
-			</div>
- </div>
-
-	
-	
-	
-	
-	
-	
-    <div id="myModalcreate" class="modal_create"><!-- The Modal -->
-    	<!-- Insert code for Create Post modal here -->
-		
-		
-		
-		<!-- Modal content -->
-		<div class="modal-content-create">
-					<div class="modal-header-create">
-								<span class="close_create">&times;</span>
-								<h2 id="head_create">Create a post</h2>
-					</div>
-					<div class="modal-body-create">
-					<form>
-							<label for="name"><b>Name</b></label>
-							<input type="text" placeholder="Enter your Name" name="name" required />		<br/>
-							<label for="name"><b>Heading</b></label>
-							<input type="text" placeholder="Enter Name of your Post " name="postname" required />
-							<button id="lets_btn"> LetsGo!!!</button>
-							</form>
-							</div>
-			<div class="modal-footer-create">
-							
-					</div>
+						</div>
 		</div>
+  
 
 
- </div>
+
+
+
+
+
+    
+				
+		<div id="myModal" class="modal"><!-- The Modal -->
+								<!-- Insert code for Sign Up modal here -->
+								<!-- Modal content -->
+								<div class="modal-content">
+								
+													<div class="modal-header">
+																	<span class="close">&times;</span>
+																	<h2 class="get_start_signup">Get Started</h2>
+																	<hr>
+													</div>
+	
+	
+	
+	
+	
+													<div class="modal-body">
+																	<form>
+																	<label for="email"><b>Full Name</b></label>
+																	<input type="text" placeholder="Enter Full Name" name="email" required />
+													
+																	<label for="name"><b>Username</b></label>
+																	<input type="text" placeholder="Enter Username" name="name" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="characters followed by an @ sign, followed by more characters, and then a .  followed at least 2 letters from a to z" required />
+			
+																	<label for="psw"><b>Password</b></label>
+																	<input type="password" placeholder="Enter Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
+
+																	<label for="psw-repeat"><b>Confirm Password</b></label>
+																	<input type="password" placeholder="Confirn Password" name="psw-repeat" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppe rcase and lowercase letter, and at least 8 or more characters" required />
+      
+		
+																	<div class="clearfix">
+													
+																	<button  type="submit" class="signupbtn">Sign Up</button>
+														
+																	</div>
+																	</form>
+													</div>
+  
+								</div>
+			</div>
+
+
+
+
+    
+
+    
+		<div id="myModalcreate" class="modal_create"><!-- The Modal -->
+						<!-- Insert code for Create Post modal here -->
+						<!-- Modal content -->
+						<div class="modal-content-create">
+										<div class="modal-header-create">
+													<span class="close_create">&times;</span>
+													<h2 id="head_create">Create a post</h2>
+										</div>
+					
+					
+					
+										<div class="modal-body-create">
+													<form>
+													<label for="name"><b>Name</b></label><br />
+													<input type="text" placeholder="Enter your Name" name="name" required />		<br/>
+													<label for="name"><b>Heading</b></label>
+													<input type="text" placeholder="Enter Name of your Post " name="postname" pattern=".{6,}" title="Six or more characters" required />
+							
+													<button id="lets_btn"> Done</button>
+													</form>
+										</div>
+    
+	
+										<div class="modal-footer-create">
+							
+										</div>
+						</div>
+
+
+			</div>
+	
+	
+	
+	
+	
+	
 	
 
-	
-	
-	
-	
-	
-	
-	
-	
 	<!-- Place all Javascript for header in this file -->
 	<script src="js\header.js"></script>
 	<!-- Place all Javascript for rest of the elements in this file -->
-    	<script src="js\index.js"></script>
-	
+    <script src="js\index.js"></script>
+
 </body>
 </html>
