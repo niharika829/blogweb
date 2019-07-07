@@ -1,68 +1,90 @@
 .logo-title {
-font-family: 'Satisfy', cursive;
-font-size: 50px;
-color: #112fb4;
-margin: auto;
-text-decoration: none;
-position: absolute;
-  
-  left: 6px;    
+	font-family: 'Satisfy', cursive;
+	font-size: 50px;
+	color: #112fb4;
+	margin: auto;
+	text-decoration: none;
+	position: absolute;
+	left: 6px;    
 }
+
+
 
 #post1{
- position: relative;
-   float:left;
+	position: relative;
+	float:left;
 	left:5%;
-right:0%;	
+	right:0%;	
 	
 }
+
+
 #post2{
- position: relative;
-   float:right;
-   right:5%;
+	position: relative;
+	float:right;
+	right:5%;
   
 }
 
+
+
 #post3{
- position: relative;
-   float:left;
+	position: relative;
+	float:left;
 	left:5%;	
 	
 }
+
+
+
 #post4{
- position: relative;
+	 position: relative;
 	 float:right;
 	 right:5%;
 	
 }
 
+
+
+
 #post5{
- position: relative;
+	position: relative;
 	left:30%;	
 	
 }
+
+
+
+
 .post {
     position: relative;
-    width: 90%;
-    height: 20%;
+	float:left;
+    width: 32%;
+    height: 15%;
     background: #fff;
     box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
     margin: 10px 10px 10px 20px;
-    float:left;
-    border-radius: 15px;
+	border-radius: 15px;
 }
+
+
+
     
 .post-left {
-        width: 15%;            
-        max-width: 15%;
+        width: 25%;            
+        max-width: 25%;
         display: table-cell;
         vertical-align: middle;
         text-align: center;
         font-weight: bold;
         color: #000;
 }
+
+
+
+
 .post-content {
-        width: 75%;           
+        width: 85%;           
         display: table-cell;
         text-align: left;
         background-color: #E8E8E8;
@@ -70,6 +92,10 @@ right:0%;
         border-radius: 0 15px 15px 0;
         padding: 0 20px;      
 }
+
+
+
+
 .post-title{
     font-family: 'Itim', cursive;
     font-weight: bold;
@@ -77,19 +103,33 @@ right:0%;
     font-size: 25px;
     height: 25px;
     }
+	
+	
+	
+	
 .post-more {
     float: right;
     cursor: pointer;
     font-size: 18px;
     margin-right: 0 !important;
     padding-right: 0 !important;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-size: 30px;
 }
+
+
+
+
 .post-desc{
-    height: 100px;
+    height: 40px;
     margin-bottom: 0 !important;
+	width: 350px; 
+	overflow: hidden;
+	text-overflow: "----"; 
+ 
 }
+
+
 
 body {
     height: 100%;
@@ -100,15 +140,28 @@ body {
     background-color: orange;
     background-size: 2000% 2000%;
 }
-.allPostsContainer {
+
+
+
+.allPostsContainer  {
     height: 100%;
     width: 100%;
-
+	position:relative;
+	right:1px;
 }
 
 
-#fa1 , #fa2 , #fa3 , #fa4 , #fa5 ,#threedots{position:relative;
-float:right;}
+
+
+
+
+#fa1 , #fa2 , #fa3 , #fa4 , #fa5 ,#threedots{
+	cursor: pointer;
+	position:relative;
+	float:right;}
+
+
+
 #myModaltrash {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -121,6 +174,8 @@ float:right;}
   overflow: auto; /* Enable scroll if needed */
   background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
 }
+
+
 
 /* Modal Content */
 .modal-content-trash {
@@ -137,6 +192,7 @@ float:right;}
   animation-duration: 0.4s
 }
 
+
 .closetrash {
   color: black;
   float: right;
@@ -144,16 +200,22 @@ float:right;}
   font-weight: bold;
 }
 
+
+
 .closetrash:hover,
 .closetrash:focus {
   color: red;
   text-decoration: underline overline dotted red;
   cursor: pointer;
 }
-  .modal-body-trash {
+
+
+.modal-body-trash {
 	color:black;
 	padding: 12px 16px;}
-	.yesno {
+	
+	
+.yesno {
   background-color: red;
   color: white;
   padding: 14px 2px;
@@ -163,13 +225,16 @@ float:right;}
   width: 35%;
   opacity: 0.9;
   position:relative;
-left:6%;
+  left:6%;
 }
+
 
 .be_sure{
 	text-align:center;
 }
-	.yesno1 {
+
+
+.yesno1 {
   background-color: green;
   color: white;
   padding: 14px 2px;
@@ -179,8 +244,10 @@ left:6%;
   width: 35%;
   opacity: 0.9;
   position:relative;
-left:20%;
+  left:20%;
 }
+
+
 
 .yesno:hover {
   opacity:1;
