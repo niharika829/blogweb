@@ -1,38 +1,43 @@
 <!DOCTYPE html>
+
+
+
 <head>
         
         <link href='..\css\post.css' rel='stylesheet' type='text/css'>
         <link href='..\css\header.css' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
         <link href='..\css\font.css' rel='stylesheet' type='text/css'>
-        	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
- 
-    <style>        
-    </style>     
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
 </head>
+
+
+
 <body>
-          <div class="header">
-             <!-- Insert code for Sign Up, Sign In button here. 
-               Add code for "ScriBBler" heading and the sub-heading -->
-			   
-			     <input id="myBtnlog" class="topButtons1" type="button" value="Sign In">
-			<input id="myBtn" class="topButtons" type="button" value="Sign Up">
-            <p id="pageTitle" class="logo-title" onClick="reload()">ScriBBler</p><br /><br />
-            <p class="middleText">Explore. Imagine. Create</p>
+        <div class="header">
+							<!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+							<input id="myBtnlog" class="topButtons1" type="button" value="Sign In">
+							<input id="myBtn" class="topButtons" type="button" value="Sign Up">
+							<p id="pageTitle" class="logo-title" onClick="reload()">ScriBBler</p><br /><br />
+							<p class="middleText">Explore. Imagine. Create</p>
         </div>
 		
-	
-	
+		
+		
+		
+		
 		<div id="myModallog" class="modal">	<!-- The Modal -->
-			<!-- Insert code for Sign In modal here -->
-			<!-- Modal content -->
+							<!-- Insert code for Sign In modal here -->
+							<!-- Modal content -->
 
-			<div class="modal-content-log">
+							<div class="modal-content-log">
 										<div class="modal-header-log">
+										
 													<span class="closelog">&times;</span>
 													<h2 class="get_start">Welcome Back!</h2>
 													<hr>
@@ -46,36 +51,48 @@
 													<form>
 							
 													<label for="name"><b>Username</b></label>
-													<input type="text" placeholder="Enter Username" name="name" required />
+													<input type="text" placeholder="Enter Username" name="name" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="characters followed by an @ sign, followed by more characters, and then a .  followed at least 2 letters from a to z" required />
 			
 													<label for="psw"><b>Password</b></label>
-													<input type="password" placeholder="Enter Password" name="psw" required />
+													<input type="password" placeholder="Enter Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
   
 													<label>
-													<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px" required /> Remember me
+													<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
 													</label>
 		
 													<div class="clearfix">
 													<button type="submit" id= "greensign" class="signinbtn">Sign In</button>
 													</div>
+													
 													</form>
 										</div>
 										
 										
 										 <div class="modal-footer">
+										 
 													<h3 id="heading">Not a member?<span class="link" onClick="fun()" >Sign Up</span></h3>
 										</div>
   
+							</div>
 			</div>
- </div>
   
 
-	
-	<div id="myModal" class="modal"><!-- The Modal -->
-				<!-- Insert code for Sign Up modal here -->
-			<!-- Modal content -->
-			<div class="modal-content">
+
+
+
+
+
+
+
+
+
+
+		<div id="myModal" class="modal"><!-- The Modal -->
+								<!-- Insert code for Sign Up modal here -->
+								<!-- Modal content -->
+								<div class="modal-content">
 										<div class="modal-header">
+										
 													<span class="close">&times;</span>
 													<h2 class="get_start_signup">Get Started</h2>
 													<hr>
@@ -86,69 +103,108 @@
 	
 	
 										<div class="modal-body">
+										
 													<form>
 													<label for="email"><b>Full Name</b></label>
 													<input type="text" placeholder="Enter Full Name" name="email" required />
 													
 													<label for="name"><b>Username</b></label>
-													<input type="text" placeholder="Enter Username" name="name" required />
+													<input type="text" placeholder="Enter Username" name="name" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="characters followed by an @ sign, followed by more characters, and then a .  followed at least 2 letters from a to z" required />
 			
 													<label for="psw"><b>Password</b></label>
-													<input type="password" placeholder="Enter Password" name="psw" required />
+													<input type="password" placeholder="Enter Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
 
 													<label for="psw-repeat"><b>Confirm Password</b></label>
-													<input type="password" placeholder="Confirn Password" name="psw-repeat" required />
+													<input type="password" placeholder="Confirn Password" name="psw-repeat" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
       
-													<!--<label>
-													<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px" required /> Remember me
-													</label>-->
 		
-														<div class="clearfix">
+													<div class="clearfix">
+													
 														<button  type="submit" class="signupbtn">Sign Up</button>
-														
 													</div>
 													</form>
 										</div>
   
-			</div>
- </div>
+								</div>
+		</div>
 
 
 
-	
-	
-	
-	
+		
+		
+		
+		
+		
+		
+		
+		
 		
 
-    <div class="blogContent">
-        <div id="blogTitle" class="blogTite">
-        <h id="blogTitleNew">The legacy of Jimi Hendrix</h>
-    </div>
+			<div class="blogContent">
+			
+							<div id="blogTitle" class="blogTite">
+							<h4 id="blogTitleNew">The legacy of Jimi Hendrix</h4>
+			</div>
+			
+			
+			
+			
 
-<div class="blogAuthor">
+			<div class="blogAuthor">
 
-    <!-- Insert code for Edit/Save button and  -->
-<button id="edit" style="font-size:24px" onclick="myFunction()"><span id="fontt">Edit </span><i class="fa fa-edit" style="font-size:16px"></i></button>	
-<button id="done" style="font-size:24px" onclick="myFunctionsave()"><span id="fontt">Save </span><i class="fa fa-save" style="font-size:16px"></i></button>	
+							<!-- Insert code for Edit/Save button and  -->
+							<button id="edit" style="font-size:24px" onclick="myFunction()"><span id="fontt">Edit </span><i class="fa fa-edit" style="font-size:16px"></i></button>	
+							<button id="done" style="font-size:24px" onclick="myFunctionsave()"><span id="fontt">Save </span><i class="fa fa-save" style="font-size:16px"></i></button>	
 
-    <p>Jimi</p>
-</div>
+							<p>Jimi</p>
+			</div>
+			
+			
+			
+			
+			
 
-<div class="blogText">
-    <p id="blogBody">
-            Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two eras — before Hendrix and after Hendrix."
-    </p>
-</div>
+			<div class="blogText">
+			
+							<p id="blogBody">
+											Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two eras — before Hendrix and after Hendrix."
+							</p>
+			</div>
+			
+			
+			
+			
 
-    <!-- Insert code for Like button, Comment button, Comment box here-->
-	     <div class="likeBlogButton">    
-    <button  id= "likeBlog" onclick='postLiked()'><i class="fa fa-thumbs-up" style="font-size:16px"></i><span id="like"> Like</span></i></button> <br />
-    <div id="commentCount">Be the first one to like this!</div>
+			<!-- Insert code for Like button, Comment button, Comment box here-->
+			<div class="likeBlogButton"> 
+											
+							<button  id= "likeBlog" onclick='postLiked()'><i class="fa fa-thumbs-up" style="font-size:16px"></i><span id="like"> Like</span></i></button> <br />
+							<div id="commentCount">Be the first one to like this!</div>
 	
-  </div>
-
-    <script src="..\js\post.js" defer></script>
+			</div>
+			
+			
+			
+			
+			
+			<div id="comment">
+			
+							
+							<textarea id="userComments" rows="10" cols="40" value="" placeholder="Add your comments.."></textarea>
+							<button id="addList" onclick="addComments(userComments)">Comment</button>
+							<button id="word-count" ></button>
+	
+			</div>
+  
+  
+  
+			<div id="addEventNames"></div>
+			
+			
+			
+  
+    <script src="..\js\post.js" >
+	</script>
     <script src="..\js\header.js">             
     </script>
     
