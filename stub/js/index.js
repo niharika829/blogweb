@@ -1,24 +1,179 @@
-// Get the modal
-var modal_create = document.getElementById("myModalcreate");
+body{
+	font-family: Arial, Helvetica, sans-serif;
+   background: url('background.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   margin: 0 !important;
+   background-size: 100% cover!important;
+   overflow:hidden;
+   display: block;
+   position: relative;
+} 
+
+
+.Buttons {
+	font-weight: 500;
+	padding:15px;
+	cursor: pointer;
+	background: orange;
+	color:black;  
+	position: absolute;
+	top: 280%;
+	right:40%;
+	width: 8%;
+	text-align: center;
+	font-size: 90%;
+	font-family: Arial, Helvetica, sans-serif;
+}
 
 
 
-// Get the button that opens the modal
-var btn_create = document.getElementById("myBtn_create");
+.Buttons1 {
+	font-weight: 500;
+	padding:15px;
+    cursor: pointer;
+    background: orange;
+	color:black;  
+	position: absolute;
+	top: 280%;
+	right:50%;
+	width: 8%;
+	text-align: center;
+	font-size: 90%;
+	font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+/* Set a style for the rest of the elements besides the header elements on the index.html page */
+    
 
 
 
-// Get the <span> element that closes the modal
-var span_create = document.getElementsByClassName("close_create")[0];
+
+/*create post*/
+/* The Modal (background) */
+.modal_create {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
 
 
-// When the user clicks the button, open the modal 
-btn_create.onclick = function() {
-									modal_create.style.display = "block";
-									}
+/* Modal Content */
+.modal-content-create {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.9s
+}
 
-// When the user clicks on <span> (x), close the modal
-span_create.onclick = function() {
-									modal_create.style.display = "none";
-									}
+
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+
+
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+
+
+/* The Close Button */
+.close_create {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+
+
+.close_create:hover,
+.close_create:focus {
+  color: red;
+  text-decoration: underline overline dotted red;
+  cursor: pointer;
+}
+
+
+
+
+.modal-header-create {
+  padding: 2px 16px;
+  background-color: white;
+  color: black;
+  
+}
+
+
+#head_create{text-align:center;}
+
+
+/* Set a style for all buttons */
+#lets_btn {
+  background-color: green;
+  color: white;
+  padding: 14px 20px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+ /* border-radius:20px 40px;*/
+}
+
+
+
+#lets_btn:hover {
+  opacity:1;
+}
+
+
+
+.modal-body-create {padding: 2px 16px;}
+
+
+
+.modal-footer-create {
+  padding: 2px 16px;
+  background-color: green;
+  color: white;
+}
+
+
+input[type=text], input[type=password] {
+  width: 92%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+	
